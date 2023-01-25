@@ -1,12 +1,18 @@
+import { Row, Col, Container } from "react-bootstrap";
 import CardMovie from "../CardMovie/CardMovie";
-// import styles from "./styles.modules.css";
+import NavBar from "../Nav/NavBar";
 
 const Movies = () => {
-    return(
-        <div className="">
-            <CardMovie/>
-        </div>
-    ); 
-}
+  return (
+    <>
+      <Row>
+        <NavBar />
+      </Row>
+      <Container>
+        <CardMovie />
+      </Container>
+    </>
+  );
+};
 
 export default Movies;

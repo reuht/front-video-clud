@@ -1,24 +1,19 @@
-const CardMovie = () => {
-    // style="width: 18rem;"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+export default function CardMovie() {
   return (
-    <div className="card" style={{width:"18rem"}}>
-      <img
-        src={"https://pics.filmaffinity.com/atlantis_the_lost_empire-149874847-large.jpg"}
-        className="card-img-top"
-        alt="imagen-1"
-      />
-      <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p class="card-text">
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">
-          Go somewhere
-        </a>
-      </div>
-    </div>
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
   );
-};
+}
 
-export default CardMovie;
