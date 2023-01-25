@@ -10,7 +10,10 @@ const Login = () => {
         <NavBar />
       </Row>
       <Container>
-        <Row className="justify-content-md-center">
+        <Row md={5}>
+           <h2>Login</h2>
+        </Row>
+        <Row>
             <Col >
                 <FormLogin />
             </Col>
